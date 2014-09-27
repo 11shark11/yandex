@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pop up</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body, .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    body{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .container {
+        position: relative;
+
+        background: #b4c5ff;
+    }
+
+    .popup {
+        position: fixed;
+        top : 50%;
+        left: 50%;
+
+        width: 150px;
+        height: 30px;
+
+        display: inline-block;
+        border-radius: 5px;
+        background: #46ff98;
+        padding: 20px;
+        margin: -25px 0 0 -100px;
+        text-align: center;
+    }
+</style>
+<body>
+<div class="container">
+    <p>
+        +) Хороший способ, работает в разлиных ситуациях, поддирживается различными браузерами, минимум стелий
+    </p>
+    <p>
+        -) Фиксированные размеры попапа
+    </p>
+    <div class="popup">
+        Hello, I am popup.
+    </div>
+</div>
+</body>
+</html>
